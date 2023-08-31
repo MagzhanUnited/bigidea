@@ -7,7 +7,8 @@
 
                 <h5>Installation</h5>
                 <p>
-                    Sakai is an application template for Vue based on the <a href="https://nuxtjs.org" class="font-medium text-primary hover:underline">Nuxt 3</a>. To get started, clone the <a href="https://github.com/primefaces/sakai-nuxt" class="font-medium text-primary hover:underline">repository</a> from GitHub and install the dependencies with npm or yarn.
+                    Sakai is an application template for Vue based on the <a href="https://nuxtjs.org" class="font-medium text-primary hover:underline">Nuxt 3</a>. To get started, clone the
+                    <a href="https://github.com/primefaces/sakai-nuxt" class="font-medium text-primary hover:underline">repository</a> from GitHub and install the dependencies with npm or yarn.
                 </p>
                 <CodeHighlight>npm install</CodeHighlight>
 

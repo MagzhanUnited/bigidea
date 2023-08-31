@@ -14,7 +14,9 @@ const { changeThemeSettings, setScale, layoutConfig } = useLayout();
 const onConfigButtonClick = () => {
     visible.value = !visible.value;
 };
-
+onBeforeMount(() => {
+    onChangeTheme('bootstrap4-dark-blue', 'dark');
+});
 const onChangeTheme = (theme, mode) => {
     const elementId = 'theme-css';
     const linkElement = document.getElementById(elementId);

@@ -1,20 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     typescript: false,
-
     app: {
+        // pageTransition: { name: 'rotate', mode: 'out-in' },
         head: {
-            title: 'Sakai Vue',
+            title: 'Қазақша жасанды интеллект',
             link: [
                 {
                     id: 'theme-css',
                     rel: 'stylesheet',
                     type: 'text/css',
-                    href: '/themes/lara-light-indigo/theme.css'
+                    href: '/themes/bootstrap4-dark-blue/theme.css'
                 }
             ]
         }
     },
+    modules: ['@pinia/nuxt'],
     build: {
         transpile: ['primevue']
     },

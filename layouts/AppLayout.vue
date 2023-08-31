@@ -6,6 +6,7 @@ import AppSidebar from './AppSidebar.vue';
 import AppConfig from './AppConfig.vue';
 import { useLayout } from './composables/layout';
 const { layoutConfig, layoutState, isSidebarActive } = useLayout();
+import { useMainStore } from '../service/composables/userstore';
 const outsideClickListener = ref(null);
 
 watch(isSidebarActive, (newVal) => {
@@ -60,15 +61,15 @@ const isOutsideClicked = (event) => {
 
 <template>
     <div class="layout-wrapper" :class="containerClass">
-        <app-topbar></app-topbar>
+        <app-topbar v-if="useMainStore().get_istopbarvisible"></app-topbar>
         <div class="layout-sidebar">
             <app-sidebar></app-sidebar>
         </div>
-        <div class="layout-main-container">
+        <div class="layout-main-container" style="padding-top: 2%">
             <div class="layout-main">
                 <router-view></router-view>
             </div>
-            <app-footer></app-footer>
+            <!-- <app-footer></app-footer> -->
         </div>
         <app-config></app-config>
         <div class="layout-mask"></div>
