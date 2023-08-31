@@ -1,0 +1,12 @@
+flask
+revChatGPT
+flask_cors
+psycopg2-binary
+grpcio
+google
+google-cloud
+protobuf
+flask-jwt-extended
+flask_sqlalchemy
+python-dotenv
+bcrypt
